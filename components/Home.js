@@ -37,10 +37,9 @@ function Home() {
   );
 
   useEffect(() => {
-    fetch("https://movie-backend-nine.vercel.app")
+    fetch("https://movie-backend-nine.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setTheMovies(data.movies);
       });
   }, []);
