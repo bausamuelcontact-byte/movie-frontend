@@ -37,7 +37,9 @@ function Home() {
   );
 
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    fetch(
+      "https://movie-backend-is8fbuek4-bausamuelcontact-bytes-projects.vercel.app"
+    )
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
